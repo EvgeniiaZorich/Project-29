@@ -15,6 +15,8 @@
 		320B41CA29EFDBF600E2F8E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320B41C929EFDBF600E2F8E1 /* Assets.xcassets */; };
 		320B41CD29EFDBF600E2F8E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320B41CB29EFDBF600E2F8E1 /* LaunchScreen.storyboard */; };
 		320B41D429EFDD6300E2F8E1 /* BuildingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320B41D329EFDD6300E2F8E1 /* BuildingNode.swift */; };
+		320B41D729F08C6A00E2F8E1 /* hitBuilding.sks in Resources */ = {isa = PBXBuildFile; fileRef = 320B41D529F08C6A00E2F8E1 /* hitBuilding.sks */; };
+		320B41D829F08C6A00E2F8E1 /* hitPlayer.sks in Resources */ = {isa = PBXBuildFile; fileRef = 320B41D629F08C6A00E2F8E1 /* hitPlayer.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		320B41C929EFDBF600E2F8E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		320B41CC29EFDBF600E2F8E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		320B41D329EFDD6300E2F8E1 /* BuildingNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingNode.swift; sourceTree = "<group>"; };
+		320B41D529F08C6A00E2F8E1 /* hitBuilding.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hitBuilding.sks; sourceTree = "<group>"; };
+		320B41D629F08C6A00E2F8E1 /* hitPlayer.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hitPlayer.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				320B41C629EFDBF400E2F8E1 /* Main.storyboard */,
 				320B41C929EFDBF600E2F8E1 /* Assets.xcassets */,
 				320B41CB29EFDBF600E2F8E1 /* LaunchScreen.storyboard */,
+				320B41D529F08C6A00E2F8E1 /* hitBuilding.sks */,
+				320B41D629F08C6A00E2F8E1 /* hitPlayer.sks */,
 			);
 			path = "Project 29";
 			sourceTree = "<group>";
@@ -130,6 +136,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				320B41C829EFDBF400E2F8E1 /* Main.storyboard in Resources */,
+				320B41D729F08C6A00E2F8E1 /* hitBuilding.sks in Resources */,
+				320B41D829F08C6A00E2F8E1 /* hitPlayer.sks in Resources */,
 				320B41BF29EFDBF400E2F8E1 /* GameScene.sks in Resources */,
 				320B41CA29EFDBF600E2F8E1 /* Assets.xcassets in Resources */,
 				320B41CD29EFDBF600E2F8E1 /* LaunchScreen.storyboard in Resources */,
