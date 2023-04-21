@@ -18,12 +18,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var currentPlayer = 1
     
     override func didMove(to view: SKView) {
-        backgroundColor = UIColor(hue: 0.669, saturation: 0.99, brightness: 0.67, alpha: 1)
-
+    
+        createGame()
         createBuildings()
         createPlayers()
         
         physicsWorld.contactDelegate = self
+    }
+    
+    func createGame() {
+        backgroundColor = UIColor(hue: 0.669, saturation: 0.99, brightness: 0.67, alpha: 1)
+        
     }
     
     func createBuildings() {
@@ -43,6 +48,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func launch(angle: Int, velocity: Int) {
+        if let gravity = viewController?.wind.getGravity(player: currentPlayer) {
+            physicsWorld.gravity = gravity
+        }
         // 1
            let speed = Double(velocity) / 10.0
 
@@ -161,6 +169,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
         player.removeFromParent()
         banana.removeFromParent()
+        
+        if player == player1 {
+            viewController?.playerScored(player: 2)
+        }
+        else {
+            viewController?.playerScored(player: 1)
+        }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             let newGame = GameScene(size: self.size)
@@ -173,6 +188,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             let transition = SKTransition.doorway(withDuration: 1.5)
             self.view?.presentScene(newGame, transition: transition)
         }
+    }
+    
+    func newGame() {
+        let newGame = GameScene(size: self.size)
+        newGame.viewController = viewController
+        viewController?.currentGame = newGame
+        
+        changePlayer()
+        newGame.currentPlayer = currentPlayer
+        
+        let transition = SKTransition.doorway(withDuration: 1.5)
+        view?.presentScene(newGame, transition: transition)
     }
     
     func bananaHit(building: SKNode, atPoint contactPoint: CGPoint) {

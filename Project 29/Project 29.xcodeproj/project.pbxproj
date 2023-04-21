@@ -17,6 +17,7 @@
 		320B41D429EFDD6300E2F8E1 /* BuildingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320B41D329EFDD6300E2F8E1 /* BuildingNode.swift */; };
 		320B41D729F08C6A00E2F8E1 /* hitBuilding.sks in Resources */ = {isa = PBXBuildFile; fileRef = 320B41D529F08C6A00E2F8E1 /* hitBuilding.sks */; };
 		320B41D829F08C6A00E2F8E1 /* hitPlayer.sks in Resources */ = {isa = PBXBuildFile; fileRef = 320B41D629F08C6A00E2F8E1 /* hitPlayer.sks */; };
+		320B41DC29F2DF0A00E2F8E1 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320B41DB29F2DF0A00E2F8E1 /* Wind.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		320B41D329EFDD6300E2F8E1 /* BuildingNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingNode.swift; sourceTree = "<group>"; };
 		320B41D529F08C6A00E2F8E1 /* hitBuilding.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hitBuilding.sks; sourceTree = "<group>"; };
 		320B41D629F08C6A00E2F8E1 /* hitPlayer.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hitPlayer.sks; sourceTree = "<group>"; };
+		320B41DB29F2DF0A00E2F8E1 /* Wind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				320B41BC29EFDBF400E2F8E1 /* AppDelegate.swift */,
 				320B41BE29EFDBF400E2F8E1 /* GameScene.sks */,
 				320B41C229EFDBF400E2F8E1 /* GameScene.swift */,
+				320B41DB29F2DF0A00E2F8E1 /* Wind.swift */,
 				320B41D329EFDD6300E2F8E1 /* BuildingNode.swift */,
 				320B41C429EFDBF400E2F8E1 /* GameViewController.swift */,
 				320B41C629EFDBF400E2F8E1 /* Main.storyboard */,
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				320B41C329EFDBF400E2F8E1 /* GameScene.swift in Sources */,
+				320B41DC29F2DF0A00E2F8E1 /* Wind.swift in Sources */,
 				320B41D429EFDD6300E2F8E1 /* BuildingNode.swift in Sources */,
 				320B41C529EFDBF400E2F8E1 /* GameViewController.swift in Sources */,
 				320B41BD29EFDBF400E2F8E1 /* AppDelegate.swift in Sources */,
